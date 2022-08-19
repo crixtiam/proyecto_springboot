@@ -1,19 +1,21 @@
 package com.example.demo;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
+@RestController
 public class ExampleCodeApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ExampleCodeApplication.class, args);
 
-		// Comentario cristiam
 
-		//segundo comentario
-
-		// ABCD
 	}
+	@GetMapping
+	public String funtion(){
+		return "hola";
 
+	}
 }
