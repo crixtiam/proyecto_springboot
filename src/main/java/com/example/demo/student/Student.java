@@ -16,6 +16,18 @@ public class Student {
         this.email = email;
         this.dob = dob;
     }
+    //Constructor without id
+
+
+    public Student(int age,
+                   String name,
+                   String email,
+                   LocalDate dob) {
+        this.age = age;
+        this.name = name;
+        this.email = email;
+        this.dob = dob;
+    }
 
     public Long getId() {
         return id;
